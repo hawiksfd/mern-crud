@@ -18,3 +18,14 @@ Content-Type: application/json
     "gender": "male"
 }
 #############################################
+
+// update user
+PATCH  http://localhost:5000/users/2
+Content-Type: application/json
+
+{
+    "nama": "niam updated",
+    "email": "niam@gmail.com",
+    "gender": "male"
+}
+#############################################
