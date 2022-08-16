@@ -38,7 +38,20 @@ export const updateUser = async (req, res) => {
         id: req.params.id,
       },
     });
-    res.status(200).json("msg: User updated susccesfully!");
+    res.status(200).json("msg: User updated succesfully!");
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+export const deleteUser = async (req, res) => {
+  try {
+    await User.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.status(200).json("msg: User deleted succesfully!");
   } catch (error) {
     console.log(error.message);
   }

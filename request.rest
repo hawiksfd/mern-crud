@@ -4,7 +4,7 @@ GET http://localhost:5000/users
 #############################################
 
 // get 1 users
-GET http://localhost:5000/users/1
+GET http://localhost:5000/users/
 
 #############################################
 
@@ -13,8 +13,8 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "nama": "niam",
-    "email": "niam@gmail.com",
+    "nama": "admin",
+    "email": "admin@gmail.com",
     "gender": "male"
 }
 #############################################
@@ -29,3 +29,6 @@ Content-Type: application/json
     "gender": "male"
 }
 #############################################
+
+// delete user
+DELETE http://localhost:5000/users/4
